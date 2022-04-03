@@ -21,11 +21,10 @@ body {
   min-height: 100vh;
   font-size: 16px;
   display: grid;
-  grid-template-areas: "headLeft head headRich"
-  "mainLeft main mainRich"
+  grid-template-areas: "mainLeft main mainRich"
   "footerLeft footer footerRich";
   grid-template-columns: auto 430px auto;  
-  grid-template-rows: 8px auto 30px;
+  grid-template-rows: auto 30px;
   justify-items:center;
   align-items: center;
 }
@@ -37,7 +36,7 @@ body {
   max-width: 430px;
   min-height: 600px;
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 12px;
   height: 700px;
   margin-top: 3rem;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
@@ -55,7 +54,7 @@ body {
 .card__title {
   margin-top: 3.5rem;
   font-weight: 900;
-  font-size: 20px;
+  font-size: 24px;
   color: var(--DarkNlue);
 }
 .card__paragraph {
@@ -92,12 +91,14 @@ body {
   font-weight: 600;
 }
 .plan__link {
+  font-size: 14px;
   cursor: pointer;
   font-weight: 500;
   margin: auto 10px auto 0;
   color: var(--BrightBlue);
 }
 .card__btn {
+  font-size: 16px;
   cursor: pointer;
   margin-top: 2.5rem;
   width: 80%;
@@ -111,6 +112,7 @@ body {
   rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 .card__link {
+  font-size: 14px;
   cursor: pointer;
   margin-top: 2.5rem;
   text-decoration: none;
