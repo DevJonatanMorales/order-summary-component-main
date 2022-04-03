@@ -1,8 +1,131 @@
+:root {
+/* ### Primary  */
+  --White : hsl(255, 100%, 100%);
+  --PaleBlue: hsl(225, 100%, 94%);
+  --BrightBlue: hsl(245, 75%, 52%);
+ 
+/* ### Neutral */
+  --VeryPaleBlue: hsl(225, 100%, 98%);
+  --DesaturatedBlue: hsl(224, 23%, 55%); 
+  --DarkNlue: hsl(223, 47%, 23%);
+}
+* {
+  box-sizing: border-box;
+  font-family: 'Red Hat Display',
+  sans-serif;
+}
+body {
+  background-image: url("../images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;  
+  background-color: var(--PaleBlue);
+  height: 97vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+}
+.card {
+  background-color: var(--White);
+  margin-top: 3rem;
+  max-width: 410px;
+  min-height: 600px;
+  overflow: hidden;
+  border-radius: 10px;
+  height: auto;
+  /* margin-bottom: 2rem; */
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+  rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  background-size: auto;
+}
+.card__avatar {
+  width: 100%;
+}
+.card__main {
+  /* height: 400px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card__title {
+  margin-top: 2.5rem;
+  font-weight: 900;
+  font-size: 20px;
+  color: var(--DarkNlue);
+}
+.card__paragraph {
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: 16px;
+  font-weight: lighter;
+  color: var(--DesaturatedBlue);
+  margin: auto 2rem auto 2rem;
+}
+.plan {
+  margin-top: 1.5rem;
+  background-color: #f8f9fe;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 80%;
+}
+.plan__icon {
+  height: 45px;
+}
+.plan__info {
+  color: var(--DarkNlue);
+  margin: 0;
+  width: 90%;
+  margin-left: 10px;
+  text-align: left;
+  font-weight: 900;
+} 
+.plan__info > span {
+  display: block;
+  color: var(--DesaturatedBlue);
+  font-weight: 700;
+}
+.plan__link {
+  cursor: pointer;
+  font-weight: 500;
+  margin: auto 10px auto 0;
+  color: var(--BrightBlue);
+}
+.card__btn {
+  cursor: pointer;
+  margin-top: 1.5rem;
+  width: 80%;
+  background-color: var(--BrightBlue);
+  border: 2px solid var(--BrightBlue);
+  color: var(--VeryPaleBlue);
+  padding: 0.8rem;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+  rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.card__link {
+  cursor: pointer;
+  margin-top: 1.5rem;
+  text-decoration: none;
+  color: var(--DarkNlue);
+}
 .attribution {
+  margin-bottom: 1rem;
+  align-self: center;
   font-size: 11px;
   text-align: center;
 }
-
-.attribution a {
+.attribution__link {
   color: hsl(228, 45%, 44%);
+}
+.card__btn:hover {
+  background-color: hsla(245, 75%, 52%, 0.5);
+  border: 2px solid hsla(245, 75%, 52%, 0.5);
+}
+.plan__link:hover {
+  color: hsla(245, 75%, 52%, 0.5);
+}
+.card__link:hover {
+  color: hsla(223, 47%, 23%, 0.5);
 }
